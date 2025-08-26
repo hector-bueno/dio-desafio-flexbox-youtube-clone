@@ -1,3 +1,43 @@
 body {
     background-color: brown;
 }
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-menu * {
+    display: inline;
+    /* display: inline-block; */
+    height: 150px;
+}
+
+main {
+    background-color: green;
+}
+
+.video-player {
+    background-color: rgb(51, 255, 0);
+} 
+
+.video-actions {
+    background-color: rgb(83, 230, 63);
+}
+
+.video-info {
+    background-color: rgb(115, 204, 127);
+}
+
+aside {
+    background-color: yellow;
+}
+
+.video-card-thumbnail {
+    background-color: rgb(204, 153, 0);
+}
+
+.video-card-info {
+    background-color: rgb(238, 219, 54);
+}
