@@ -9,68 +9,91 @@
 <body>
     <header>
         <div class="item-menu">
-            <div id="botao-menu"> botao menu</div>
-            <img id="logo" src="" srcset="" alt="Logo do Youtube">
+            <img id="botao-menu" src="/imgs/bars-solid-full.svg" alt="Botão do Menu" srcset="">
+            <img id="logo" src="/imgs/youtube-logo.png" srcset="" alt="Logo do Youtube">
         </div>
         <div class="item-menu">
             <input type="text" placeholder="Pesquisar">
-            <div id="botao-pesquisa">botao pesquisa</div>
+            <button id="btn-pesquisa">
+                <!-- <img id="botao-pesquisa" src="" alt="Botão de Pesquisa" srcset=""> -->
+            </button>
         </div>
         <div class="item-menu">
-            <div id="botao-video">botao video</div>
-            <div id="botao-notificacao">botao notificacao</div>
-            <div id="foto-usuario">foto usuario</div>
+            <img src="/imgs/video-solid-full.svg" alt="imagem do usuário" srcset="">
+            <img src="/imgs/bell-regular-full.svg" alt="imagem do usuário" srcset="">
+            <img src="/imgs/profile-sonic.webp" alt="imagem do usuário" srcset="">
         </div>
     </header>
 
     <main>
-        <section class="video-player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HbuL68n8Smg?si=3WRMhbKbMX1VBo7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h1>Título do vídeo</h1>
-        </section>
-        <section class="video-actions">
-            <img class="container-actions" src="" alt="logo-canal" srcset="">
-            <div class="container-actions" id="info-canal">
-                <h2>Nome do Canal</h2>
-                <p>Quantidade de inscritos</p>
-            </div>
-            <button class="container-actions" id="btn-subscribe">
-                Inscreva-se
-            </button>
-            <div class="container-actions">
-                <img id="icone-like" src="" alt="" srcset="">
-                <p id="subscribers">Quantidade de likes</p>
-            </div>
-            <div class="container-actions">
-                <img id="dislike" src="" alt="" srcset="">
-                <p>Quantidade de dislikes</p>
-            </div>
-            <div class="container-actions">
-                <img id="share" src="" alt="" srcset="">
-                <p>Compartilhar</p>
-            </div>
-            <div class="container-actions">
-                <img id="icone-download" src="" alt="" srcset="">
-            </div>
-        </section>
-        <section class="video-info">
-            <p><span id="qt-views">28.418</span> visualizações Transmitido ao vivo em <span id="data">23 ago. de 2022</span></p>
-            <p>Descrição do vídeo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid alias asperiores consequatur debitis dignissimos, earum placeat vero hic blanditiis. Odit pariatur optio similique ea, explicabo voluptatibus architecto. Quaerat, repudiandae.</p>
-        </section>
-    </main>
-
-    <aside>
-        <ul>
-            <li class="video-card">
-                <img class="video-card-thumbnail" src="" alt="thumbnail video">
-                <div class="video-card-info">
-                    <h3 class="video-title">Título do vídeo</h3>
-                    <p class="video-channel">Nome do canal</p>
-                    <p class="video-views">Número de visualizações</p>
-                    <p class="video-upload-time">Tempo desde o upload</p>
+        <section id="video-atual">
+            <section class="video-player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HiakOSjctiw?si=ZM56Q-odS9VgsM6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1>A.I.L.A – Trailer Oficial (PT-BR) | Gamescom Europe 2024</h1>
+            </section>
+            <section class="video-actions">
+                <div id="channel-infos">
+                    <img class="container-actions" src="/imgs/logo-pulsatrix.jpg" alt="logo-canal" srcset="">
+                    <div class="" id="info-canal">
+                        <h2>Pulsatrix Studios</h2>
+                        <p><span>8,88 mil</span> inscritos</p>
+                    </div>
                 </div>
-            </li>
-        </ul>
-    </aside>
+                <button class="container-actions" id="btn-subscribe">
+                    Inscreva-se
+                </button>
+                <div class="container-actions">
+                    <button type="button" id="btn-like-blank">
+                        <!-- <img id="icone-like" src="/imgs/thumbs-up-solid-full.svg" alt="" srcset=""> -->
+                    </button>
+                        <p id="subscribers">Quantidade de likes</p>
+                </div>
+                <div class="container-actions" id="dislike">
+                    <button type="button" id="btn-dislike-blank">
+                        <!-- <img id="icone-dislike" src="" alt="" srcset=""> -->
+                    </button>
+                    <p>Quantidade de dislikes</p>
+                </div>
+                <div class="container-actions">
+                    <button id="btn-share">
+                        <img id="share" src="" alt="" srcset="">
+                    </button>
+                    <p>Compartilhar</p>
+                </div>
+                <div class="container-actions">
+                    <button id="btn-download">
+                        <!-- <img id="icone-download" src="" alt="" srcset=""> -->
+                    </button>
+                    <p>Download</p>
+                </div>
+            </section>
+            <section class="video-info">
+                <p><span id="qt-views">28.418</span> visualizações Transmitido ao vivo em <span id="data">23 ago. de 2022</span></p>
+                <p>Descrição do vídeo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid alias asperiores consequatur debitis dignissimos, earum placeat vero hic blanditiis. Odit pariatur optio similique ea, explicabo voluptatibus architecto. Quaerat, repudiandae.</p>
+            </section>
+        </section>
+        <aside>
+            <ul>
+                <li class="video-card">
+                    <img class="video-card-thumbnail" src="" alt="thumbnail video">
+                    <div class="video-card-info">
+                        <h3 class="video-title">Título do vídeo</h3>
+                        <p class="video-channel">Nome do canal</p>
+                        <p class="video-views">Número de visualizações</p>
+                        <p class="video-upload-time">Tempo desde o upload</p>
+                    </div>
+                </li>
+                <li class="video-card">
+                    <img class="video-card-thumbnail" src="" alt="thumbnail video">
+                    <div class="video-card-info">
+                        <h3 class="video-title">Título do vídeo</h3>
+                        <p class="video-channel">Nome do canal</p>
+                        <p class="video-views">Número de visualizações</p>
+                        <p class="video-upload-time">Tempo desde o upload</p>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+    </main>
 </body>
 </html>

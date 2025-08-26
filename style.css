@@ -1,29 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
     background-color: brown;
+    margin: auto;
 }
 
 header {
     background-color: blue;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .item-menu * {
     display: inline;
     /* display: inline-block; */
-    height: 150px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#btn-pesquisa {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    /* background-color: transparent; */
+    cursor: pointer;
 }
 
 main {
     background-color: green;
+    display: flex;
+    gap: 20px;
 }
 
 .video-player {
     background-color: rgb(51, 255, 0);
-} 
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 400px;
+}
 
 .video-actions {
     background-color: rgb(83, 230, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-actions {
+    display: flex;
+}
+
+#channel-infos {
+    background-color: rgb(153, 255, 102);
+    display: flex;
+    align-items: center;
+}
+
+#channel-infos img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#info-canal h2, #info-canal p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#btn-subscribe {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btn-like-blank, #btn-like-active, #btn-dislike-blank, #btn-share, #btn-download {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    /* background-color: transparent; */
+    cursor: pointer;
+}
+
+#btn-like-blank {
+    background-image: url("/imgs/thumbs-up-regular-full.svg");
+}
+
+#btn-like-active {
+    background-image: url("/imgs/thumbs-up-solid-full.svg");
+}
+
+#btn-dislike-blank {
+    background-image: url("/imgs/thumbs-down-regular-full.svg");
+}
+
+#btn-dislike-active {
+    background-image: url("/imgs/thumbs-down-solid-full.svg");
+}
+
+#btn-share {
+    background-image: url("/imgs/share-nodes-solid-full.svg");
+}
+
+#btn-download {
+    background-image: url("/imgs/download-solid-full.svg");
 }
 
 .video-info {
@@ -31,7 +125,14 @@ main {
 }
 
 aside {
+    width: 100%;
     background-color: yellow;
+}
+
+aside li {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
 }
 
 .video-card-thumbnail {
