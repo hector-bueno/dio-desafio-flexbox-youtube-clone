@@ -7,13 +7,13 @@
 }
 
 body {
+    /* background-color: brown; */
     /* width: 90%; */
     font-family: 'Roboto', sans-serif;
-    background-color: brown;
 }
 
 header {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,21 +86,21 @@ header {
 }
 
 main {
-    background-color: green;
+    /* background-color: green; */
     display: flex;;
     gap: 20px;
     width: 95%;
     position: absolute;
-    right: 20px;
+    right: 33px;
 }
 
 .video-player {
-    background-color: rgb(51, 255, 0);
+    /* background-color: rgb(51, 255, 0); */
 }
 
 .video-player iframe {
     width: 100%;
-    height: 400px;
+    height: 80vh;
     margin: 15px 0;
 }
 
@@ -111,7 +111,7 @@ h1 {
 }
 
 .video-actions {
-    background-color: rgb(83, 230, 63);
+    /* background-color: rgb(83, 230, 63); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +123,7 @@ h1 {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    background-color: rgb(153, 255, 102);
+    /* background-color: rgb(153, 255, 102); */
 }
 
 #channel-infos {
@@ -138,7 +138,7 @@ h1 {
 }
 
 #info-canal {
-    background-color: purple;
+    /* background-color: purple; */
     margin-left: 10px;
     width: 120px;
 }
@@ -168,13 +168,13 @@ h1 {
 }
 
 .action-icon {
+    /* background-color: aqua; */
     width: 40px;
     height: 30px;
     border: none;
-
     background-size: 90%;
     background-repeat: no-repeat;
-    background-color: aqua;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -210,7 +210,7 @@ h1 {
 }
 
 .video-info {
-    background-color: rgb(121, 115, 204);
+    /* background-color: rgb(121, 115, 204); */
     font-size: 14px;
     width: 60%;
 }
@@ -222,19 +222,49 @@ h1 {
 
 aside {
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 aside li {
     list-style: none;
     display: flex;
-    margin: 10px 0;
+    margin: 5px 0;
+    height: 100px;
+}
+
+.video-card picture {
+    overflow: hidden;
+    width: 250px;
+    height: 90px;
 }
 
 .video-card-thumbnail {
-    background-color: rgb(204, 153, 0);
+    /* background-color: rgb(204, 153, 0); */
+    width: 120%;
+    margin: 5px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .video-card-info {
-    background-color: rgb(238, 219, 54);
+    /* background-color: rgb(238, 219, 54); */
+    margin: 5px 0 0 5px;
+    width: 100%;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.video-channel, .video-views, .video-upload-time {
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.video-channel {
+    margin-bottom: 5px;
 }
