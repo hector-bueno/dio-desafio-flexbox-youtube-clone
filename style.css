@@ -62,7 +62,7 @@ header {
 #btn-pesquisa {
     width: 25px;
     height: 25px;
-    background-image: url("/imgs/magnifying-glass-solid-full.png");
+    background-image: url("./imgs/magnifying-glass-solid-full.png");
     background-size: cover;
     background-color: transparent;
     cursor: pointer;
@@ -179,27 +179,27 @@ h1 {
 }
 
 #btn-like-blank {
-    background-image: url("/imgs/thumbs-up-regular-full.png");
+    background-image: url("./imgs/thumbs-up-regular-full.png");
 }
 
 #btn-like-active {
-    background-image: url("/imgs/thumbs-up-solid-full.png");
+    background-image: url("./imgs/thumbs-up-solid-full.png");
 }
 
 #btn-dislike-blank {
-    background-image: url("/imgs/thumbs-down-regular-full.png");
+    background-image: url("./imgs/thumbs-down-regular-full.png");
 }
 
 #btn-dislike-active {
-    background-image: url("/imgs/thumbs-down-solid-full.png");
+    background-image: url("./imgs/thumbs-down-solid-full.png");
 }
 
 #btn-share {
-    background-image: url("/imgs/share-nodes-solid-full.png");
+    background-image: url("./imgs/share-nodes-solid-full.png");
 }
 
 #btn-download {
-    background-image: url("/imgs/download-solid-full.png");
+    background-image: url("./imgs/download-solid-full.png");
 }
 
 .container-actions p {
