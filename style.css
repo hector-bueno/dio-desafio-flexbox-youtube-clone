@@ -7,10 +7,9 @@
 }
 
 body {
-    width: 90%;
+    /* width: 90%; */
     font-family: 'Roboto', sans-serif;
     background-color: brown;
-    margin: auto;
 }
 
 header {
@@ -18,6 +17,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 56px;
+    width: 100%;
+}
+
+.item-menu {
+    width: 20%;
+    text-align: center;
+}
+
+#container-pesquisa {
+    width: 30%;
+    justify-content: center;
+}
+
+#container-pesquisa * {
+    margin: -5px;
 }
 
 .item-menu * {
@@ -25,20 +40,58 @@ header {
     /* display: inline-block; */
     height: 30px;
     vertical-align: middle;
+    margin: 0 10px;
 }
 
-#btn-pesquisa {
-    width: 25px;
-    height: 25px;
+#botao-menu {
+    width: 30px;
+    height: 30px;
     background-size: cover;
     /* background-color: transparent; */
     cursor: pointer;
 }
 
+#txt-pesquisa {
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+#btn-pesquisa {
+    width: 25px;
+    height: 25px;
+    background-image: url("/imgs/magnifying-glass-solid-full.png");
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0;
+    opacity: 0.5;
+}
+
+#container-icons-right {
+    width: 25%;
+}
+
+.item-menu img {
+    height: 25px;
+}
+
+#container-icons-right :nth-child(3) {
+    height: 34px;
+    border-radius: 50%;
+}
+
 main {
     background-color: green;
-    display: flex;
+    display: flex;;
     gap: 20px;
+    width: 95%;
+    position: absolute;
+    right: 20px;
 }
 
 .video-player {
@@ -48,6 +101,13 @@ main {
 .video-player iframe {
     width: 100%;
     height: 400px;
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .video-actions {
@@ -55,73 +115,109 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 .container-actions {
     display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: rgb(153, 255, 102);
 }
 
 #channel-infos {
-    background-color: rgb(153, 255, 102);
     display: flex;
     align-items: center;
 }
 
 #channel-infos img {
-    width: 50px;
+    width: 42px;
     border-radius: 50%;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+}
+
+#info-canal {
+    background-color: purple;
+    margin-left: 10px;
+    width: 120px;
 }
 
 #info-canal h2, #info-canal p {
-    margin: 0;
-    font-size: 16px;
+    /* margin: 0; */
+    font-size: 14px;
 }
 
 #btn-subscribe {
+    width: 159px;
+    height: 40px;
+    margin: 0 10px;
     background-color: red;
+    font-weight: 600;
     color: white;
+    text-transform: uppercase;
     border: none;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 }
 
-#btn-like-blank, #btn-like-active, #btn-dislike-blank, #btn-share, #btn-download {
-    width: 25px;
-    height: 25px;
-    background-size: cover;
-    /* background-color: transparent; */
+#dislike, #like {
+    width: 120px;
+}
+
+.action-icon {
+    width: 40px;
+    height: 30px;
+    border: none;
+
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: aqua;
     cursor: pointer;
 }
 
 #btn-like-blank {
-    background-image: url("/imgs/thumbs-up-regular-full.svg");
+    background-image: url("/imgs/thumbs-up-regular-full.png");
 }
 
 #btn-like-active {
-    background-image: url("/imgs/thumbs-up-solid-full.svg");
+    background-image: url("/imgs/thumbs-up-solid-full.png");
 }
 
 #btn-dislike-blank {
-    background-image: url("/imgs/thumbs-down-regular-full.svg");
+    background-image: url("/imgs/thumbs-down-regular-full.png");
 }
 
 #btn-dislike-active {
-    background-image: url("/imgs/thumbs-down-solid-full.svg");
+    background-image: url("/imgs/thumbs-down-solid-full.png");
 }
 
 #btn-share {
-    background-image: url("/imgs/share-nodes-solid-full.svg");
+    background-image: url("/imgs/share-nodes-solid-full.png");
 }
 
 #btn-download {
-    background-image: url("/imgs/download-solid-full.svg");
+    background-image: url("/imgs/download-solid-full.png");
+}
+
+.container-actions p {
+    font-size: 14px;
+    width: 100%;
+    text-wrap: nowrap;
+    margin-left: 5px;
 }
 
 .video-info {
-    background-color: rgb(115, 204, 127);
+    background-color: rgb(121, 115, 204);
+    font-size: 14px;
+    width: 60%;
+}
+
+.video-info h3, .video-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 aside {

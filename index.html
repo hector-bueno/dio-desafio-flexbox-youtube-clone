@@ -9,18 +9,18 @@
 <body>
     <header>
         <div class="item-menu">
-            <img id="botao-menu" src="/imgs/bars-solid-full.svg" alt="Botão do Menu" srcset="">
+            <img id="botao-menu" src="/imgs/bars-solid-full.png" alt="Botão do Menu" srcset="">
             <img id="logo" src="/imgs/youtube-logo.png" srcset="" alt="Logo do Youtube">
         </div>
-        <div class="item-menu">
-            <input type="text" placeholder="Pesquisar">
+        <div class="item-menu" id="container-pesquisa">
+            <input id="txt-pesquisa" type="text" placeholder="Pesquisar">
             <button id="btn-pesquisa">
                 <!-- <img id="botao-pesquisa" src="" alt="Botão de Pesquisa" srcset=""> -->
             </button>
         </div>
-        <div class="item-menu">
-            <img src="/imgs/video-solid-full.svg" alt="imagem do usuário" srcset="">
-            <img src="/imgs/bell-regular-full.svg" alt="imagem do usuário" srcset="">
+        <div class="item-menu" id="container-icons-right">
+            <img src="/imgs/video-solid-full.png" alt="imagem do usuário" srcset="">
+            <img src="/imgs/bell-regular-full.png" alt="imagem do usuário" srcset="">
             <img src="/imgs/profile-sonic.webp" alt="imagem do usuário" srcset="">
         </div>
     </header>
@@ -32,50 +32,50 @@
                 <h1>A.I.L.A – Trailer Oficial (PT-BR) | Gamescom Europe 2024</h1>
             </section>
             <section class="video-actions">
-                <div id="channel-infos">
-                    <img class="container-actions" src="/imgs/logo-pulsatrix.jpg" alt="logo-canal" srcset="">
+                <div class="container-actions" id="channel-infos">
+                    <img src="/imgs/logo-pulsatrix.jpg" alt="logo-canal" srcset="">
                     <div class="" id="info-canal">
                         <h2>Pulsatrix Studios</h2>
-                        <p><span>8,88 mil</span> inscritos</p>
+                        <p>8,88 mil inscritos</p>
                     </div>
                 </div>
                 <button class="container-actions" id="btn-subscribe">
                     Inscreva-se
                 </button>
-                <div class="container-actions">
-                    <button type="button" id="btn-like-blank">
+                <div class="container-actions" id="like">
+                    <button type="button" class="action-icon" id="btn-like-blank">
                         <!-- <img id="icone-like" src="/imgs/thumbs-up-solid-full.svg" alt="" srcset=""> -->
                     </button>
-                        <p id="subscribers">Quantidade de likes</p>
+                    <p id="subscribers">2 mil</p>
                 </div>
                 <div class="container-actions" id="dislike">
-                    <button type="button" id="btn-dislike-blank">
+                    <button type="button" class="action-icon" id="btn-dislike-blank">
                         <!-- <img id="icone-dislike" src="" alt="" srcset=""> -->
                     </button>
-                    <p>Quantidade de dislikes</p>
+                    <p>Não gostei</p>
                 </div>
                 <div class="container-actions">
-                    <button id="btn-share">
-                        <img id="share" src="" alt="" srcset="">
+                    <button class="action-icon" id="btn-share">
+                        <!-- <img id="share" src="" alt="" srcset=""> -->
                     </button>
                     <p>Compartilhar</p>
                 </div>
                 <div class="container-actions">
-                    <button id="btn-download">
+                    <button class="action-icon" id="btn-download">
                         <!-- <img id="icone-download" src="" alt="" srcset=""> -->
                     </button>
                     <p>Download</p>
                 </div>
             </section>
             <section class="video-info">
-                <p><span id="qt-views">28.418</span> visualizações Transmitido ao vivo em <span id="data">23 ago. de 2022</span></p>
+                <h3>28.418 visualizações Transmitido ao vivo em 23 ago. de 2022</h3>
                 <p>Descrição do vídeo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid alias asperiores consequatur debitis dignissimos, earum placeat vero hic blanditiis. Odit pariatur optio similique ea, explicabo voluptatibus architecto. Quaerat, repudiandae.</p>
             </section>
         </section>
         <aside>
             <ul>
                 <li class="video-card">
-                    <img class="video-card-thumbnail" src="" alt="thumbnail video">
+                    <img class="video-card-thumbnail" src="/imgs/mini-thumb-sonic.gif" alt="thumbnail video">
                     <div class="video-card-info">
                         <h3 class="video-title">Título do vídeo</h3>
                         <p class="video-channel">Nome do canal</p>
@@ -84,7 +84,7 @@
                     </div>
                 </li>
                 <li class="video-card">
-                    <img class="video-card-thumbnail" src="" alt="thumbnail video">
+                    <img class="video-card-thumbnail" src="/imgs/mini-thumb-raziel.gif" alt="thumbnail video">
                     <div class="video-card-info">
                         <h3 class="video-title">Título do vídeo</h3>
                         <p class="video-channel">Nome do canal</p>
